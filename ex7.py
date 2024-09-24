@@ -1,0 +1,28 @@
+import os
+
+nome = str(input("Digite seu Nome: "))
+cpf = int(input("Digite seu CPF: "))
+rg = int(input("Digite seu RG: "))
+nasc = int(input("Digite sua data de nascimento: "))
+sexo = str(input("Digite seu sexo: "))
+peso = float(input("Digite seu peso: KG"))
+tsangue = str(input("Digite seu tipo sanguíneo: "))
+renda = float(input("Digite sua renda: "))
+end = str(input("Digite seu endereço: "))
+tel = int(input("Digite seu telefone: "))
+cid = str(input("Digite sua cidade: "))
+est = str(input("Digite seu estado: "))
+
+os.system("cls")
+
+print(f"Nome: {nome}")
+print(f"CPF: {cpf}")
+print(f"RG: {rg}")
+print(f"Data de nascimento: {nasc}")
+print(f"Sexo: {sexo}")
+print(f"Tipo sanguíneo: {tsangue}")
+print(f"Renda: {renda}")
+print(f"Endereço: {end}")
+print(f"Telefone: {tel}")
+print(f"Cidade: {cid}")
+print(f"Estado: {est}")
