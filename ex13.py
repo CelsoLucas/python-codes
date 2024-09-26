@@ -1,2 +1,2 @@
 nome = str(input("Digite um nome completo: "))
-print(nome[:8])
+print(nome[:9])
