@@ -4,7 +4,7 @@ n3 = float(input("Nota 3: "))
 n4 = float(input("Nota 4: "))
 media = (n1 + n2 + n3 + n4) / 4
 
-if media >= 9.1:
+if media >= 9.1 and media <= 10:
     texto = "APROVADO"
     conc = "A"
 elif media >= 7.6:
@@ -19,6 +19,8 @@ elif media >= 4.1:
 elif media >= 0:
     texto = "REPROVADO"
     conc = "E"
+else:
+    print("Nota não existente!")
 
 print(f"Você foi {texto} pois seu conceito foi {conc}")
 
