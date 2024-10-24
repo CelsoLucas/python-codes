@@ -1,3 +1,3 @@
-num = int(input("Número: "))
 for n in range(1, 11):
-    print(f"{num} X {n} = {num * n}")
+    for c in range(1, 11):
+        print(f"{n} X {c} = {n*c}")
