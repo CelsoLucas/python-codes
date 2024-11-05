@@ -64,4 +64,3 @@ while True:
         
     else:
         print("Opção Invalida!")
-            
