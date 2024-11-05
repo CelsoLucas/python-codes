@@ -8,4 +8,4 @@ pessoas = {
 }
 
 for k in pessoas:
-    print(k, pessoas[k])
+    print(f"{k} - {pessoas[k]}")
