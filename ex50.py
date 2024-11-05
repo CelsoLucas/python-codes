@@ -6,4 +6,6 @@ pessoas = {
     "Ryan":18,
     "Thiago":17
 }
-print(pessoas)
+
+for k in pessoas:
+    print(k, pessoas[k])
