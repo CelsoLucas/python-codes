@@ -1,3 +1,4 @@
+lista = [1, 2, 3, 4]
 while True:
     print("=-="*15)
     print("1 - Soma")
@@ -12,7 +13,9 @@ while True:
         print("=-="*15)
         print("Digite apenas números")
         continue
-
+    if opc not in lista:
+        print("Opção invalida")
+        continue
     while True:
         while True:
             try:
@@ -64,3 +67,4 @@ while True:
         
     else:
         print("Opção Invalida!")
+        continue
