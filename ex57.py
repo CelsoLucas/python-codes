@@ -6,6 +6,7 @@ class Pessoa():
         self.altura = altura
 
     def envelhecer(self):
+        self.saver = self.idade
         self.idade = int(input("Idade: "))
 
     def engordar(self):
@@ -16,7 +17,8 @@ class Pessoa():
 
     def crescer(self):
         if self.idade < 21:
-            self.altura = self.altura + 0.05
+            for i in range(self.idade - self.saver):
+                self.altura = self.altura + 0.05
 
 pessoa1 = Pessoa("Celso", 17, 65, 1.70)
 print(f"{pessoa1.nome} tem {pessoa1.idade} e tem {pessoa1.altura} de altura")
