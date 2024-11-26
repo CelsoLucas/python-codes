@@ -9,7 +9,7 @@ class Quadrado():
     def mudar_valor_lado(self):
         self.tamanho_lado = float(input("Novo tamanho do lado: "))
         print(f"O novo tamanho do lado é {self.tamanho_lado}")
-        print(f"A nova area é {self.tamanho_lado**2}")
+        self.mostrar_area()
         
 quadrado1 = Quadrado(2)
 quadrado1.mostrar_area()
