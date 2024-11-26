@@ -18,5 +18,17 @@ class Retangulo():
         centro = Ponto(self.x_centro, self.y_centro)
         centro.escreve()
 
-ret = Retangulo(20, 15)
-ret.encontrar_centro()
+
+while True:
+    print("1 - Criar retangulo")
+    print("2 - Sair")
+    opc = int(input("Opção: "))
+    if opc == 1:
+        lar = float(input("Largura: "))
+        alt = float(input("Altura: "))
+        ret = Retangulo(lar, alt)
+        ret.encontrar_centro()
+    elif opc == 2:
+        break
+    else:
+        print("Opção invalida!")
