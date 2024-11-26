@@ -1,17 +1,22 @@
-class BombaDeCombustivel():
-    def __init__(self, tipoCombustivel, valorLitro, quantidadeCombustivel):
-        self.tipoC = tipoCombustivel
-        self.valorL = valorLitro
-        self.qtdC = quantidadeCombustivel
+class Ponto():
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
 
-    def abastecerPorValor(self):
-        self.valor = float(input("Digite o valor a ser abastecido: R$"))
+    def escreve(self):
+        print(f"X: {self.x} | Y: {self.y}")
+    
+class Retangulo():
+    def __init__(self, largura, altura):
+        self.largura = largura
+        self.altura = altura
 
-    def abastecerPorLitro(self):
-        pass
-    def alterarValor(self):
-        pass
-    def alterarCombustivel(self):
-        pass
-    def alterarQuatidadeCombustivel(self):
-        pass
+    def encontrar_centro(self):
+        self.x_centro = self.largura / 2
+        self.y_centro = self.altura / 2
+        
+        centro = Ponto(self.x_centro, self.y_centro)
+        centro.escreve()
+
+ret = Retangulo(20, 15)
+ret.encontrar_centro()

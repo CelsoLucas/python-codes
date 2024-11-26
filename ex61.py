@@ -1,22 +1,40 @@
-class Ponto():
-    def __init__(self, x, y):
-        self.x = x
-        self.y = y
-
-    def escreve(self):
-        print(f"X: {self.x} | Y: {self.y}")
+class Macaco():
+    def __init__(self, nome):
+        self.nome = nome
+        self.bucho = "Vazio"
     
-class Retangulo():
-    def __init__(self, largura, altura):
-        self.largura = largura
-        self.altura = altura
+    def comer(self):
+        self.alimento = str(input(f"Oque o {self.nome} vai comer: "))
+        self.bucho = self.alimento
+    def verBucho(self):
+        print(f"{self.bucho}")
 
-    def encontrar_centro(self):
-        self.x_centro = self.largura / 2
-        self.y_centro = self.altura / 2
-        
-        centro = Ponto(self.x_centro, self.y_centro)
-        centro.escreve()
+    def digerir(self):
+        self.bucho = "Vazio"
 
-ret = Retangulo(20, 15)
-ret.encontrar_centro()
+macaco1 = Macaco("Yuri")
+macaco2 = Macaco("Dona")
+macaco1.comer()
+macaco2.comer()
+macaco1.verBucho()
+macaco2.verBucho()
+macaco1.digerir()
+macaco2.digerir()
+macaco1.verBucho()
+macaco2.verBucho()
+macaco1.comer()
+macaco2.comer()
+macaco1.verBucho()
+macaco2.verBucho()
+macaco1.digerir()
+macaco2.digerir()
+macaco1.verBucho()
+macaco2.verBucho()
+macaco1.comer()
+macaco2.comer()
+macaco1.verBucho()
+macaco2.verBucho()
+macaco1.digerir()
+macaco2.digerir()
+macaco1.verBucho()
+macaco2.verBucho()
